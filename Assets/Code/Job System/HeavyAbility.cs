@@ -10,21 +10,20 @@ public class HeavyAbility : BaseAbility
 
     public int damage
     {
-        get{ throw new NotImplementedException();}
-
-        set{throw new NotImplementedException();}
+        get{ return _damage;}
+        set{_damage = value;}
     }
 
     public string name
     {
-        get{throw new NotImplementedException();}
-        set{throw new NotImplementedException();}
+        get{return _name;}
+        set{_name = value;}
     }
 
     public int unlockLevel
     {
-        get{throw new NotImplementedException();}
-        set{throw new NotImplementedException();}
+        get{return _unlockLevel;}
+        set{_unlockLevel = value;}
     }
 
     public HeavyAbility()
