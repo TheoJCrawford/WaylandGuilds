@@ -49,13 +49,26 @@ public class Character{
         _gender = true;
         _level = 1;
         _expToLevel = 100;
+        _job = new Job();
         _curLight = 0;
         _curHeavy = 0;
 
     }
     #endregion
     #region Functions
-
+    public void AddExp(int Exp)
+    {
+        _expToLevel -= Exp;
+        if(_expToLevel < 0)
+        {
+            LevelUp();
+        }
+    }
+    public void LevelUp()
+    {
+        _level++;
+        _expToLevel = _level * 100;
+    }
     #endregion
 }
 

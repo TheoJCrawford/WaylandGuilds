@@ -8,6 +8,7 @@ public class HeavyAbility : BaseAbility
     private int _damage;
     private float _chargeTime;
     private int _unlockLevel;
+    private bool _isUnlocked;
     #region S&G
     public int damage
     {
@@ -32,13 +33,20 @@ public class HeavyAbility : BaseAbility
         get{return _unlockLevel;}
         set{_unlockLevel = value;}
     }
+
+    public bool isUnlocked
+    {
+        get{return _isUnlocked;}
+        set{_isUnlocked = value;}
+    }
     #endregion
     public HeavyAbility()
     {
         _name = "Full Burst";
         _damage = 60;
         _chargeTime = 2.0f;
-        unlockLevel = 10;
+        _unlockLevel = 10;
+        _isUnlocked = false;
 
     }
 }

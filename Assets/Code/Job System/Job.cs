@@ -16,4 +16,5 @@ public class Job : MonoBehaviour {
         _lightAbil = new List<LightAbility>();
         _heavyAbil = new List<HeavyAbility>();
     }
+    public void CheckAbilitity
 }
